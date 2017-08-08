@@ -1,0 +1,16 @@
+region: us-east-2
+
+function_name: computeSentiment
+handler: computeSentiment.lambda_handler
+# 
+role: lambda_basic_execution
+description: A lambda function that takes a sentence as a parameter, and returns a sentiment score.
+runtime: python3.6
+# if access key and secret are left blank, boto will use the credentials
+# defined in the [default] section of ~/.aws/credentials.
+aws_access_key_id:
+aws_secret_access_key:
+
+# dist_directory: dist
+# timeout: 15
+# memory_size: 512
